@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+
+body {
+  line-height: 1.3;
+}
+
+.diceroll-container {
+  display: grid;
+  place-items: center;
+}
+
+.diceroll {
+  width: 900px;
+  box-shadow: 1px 1px 8px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  & img {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.diceroll-pointer {
+  font-size: 4rem;
+  display: inline-block;
+  width: 150px; /* size de cada dado */
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  transition: all 200ms ease-in-out;
+}
+
+.dice-header {
+  padding: 2rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #00940c;
+}
+
+.btn-dice {
+  padding: 1.2rem;
+  display: block;
+  margin: 1em auto;
+  font-size: 2rem;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: #f7eb4d;
+}
+
+.diceroll-list {
+  text-align: center;
+  font-size: 1.5em;
+
+  & > h2 {
+    padding-bottom: 1.5rem;
+  }
+}
